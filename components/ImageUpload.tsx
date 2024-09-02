@@ -17,7 +17,11 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onUpload }) => {
     try {
       const formData = new FormData();
       formData.append('file', file);
-      formData.append('userId', session?.user.id);
+      
+      // Only append userId if it exists
+      if (session?.user?.id) {
+        formData.append('userId', session.user.id);
+      }
 
       const response = await fetch('/api/upload', {
         method: 'POST',
