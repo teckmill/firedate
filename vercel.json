@@ -13,7 +13,7 @@
     }
   ],
   "env": {
-    "NEXTAUTH_URL": "https://your-app-url.vercel.app",
+    "NEXTAUTH_URL": "https://firedate-yqkbh.vercel.app",
     "NEXTAUTH_SECRET": "@nextauth-secret",
     "NEXT_PUBLIC_FIREBASE_API_KEY": "@firebase-api-key",
     "NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN": "@firebase-auth-domain",
