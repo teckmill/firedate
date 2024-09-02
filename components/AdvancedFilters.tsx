@@ -27,7 +27,7 @@ const AdvancedFilters: React.FC<{ onApplyFilters: (filters: Filters) => void }> 
     onApplyFilters(filters);
   };
 
-  if (session?.user.subscription !== 'premium') {
+  if (session?.user?.subscription !== 'premium') {
     return <p>Upgrade to premium to use advanced filters!</p>;
   }
 
